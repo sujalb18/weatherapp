@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .form{
+        width: 100%;
+        height:100vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://cdn.pixabay.com/photo/2016/12/14/04/08/thunderbolt-1905603_960_720.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .form h1{
+        margin-top: 30px;
+    }
+
+    .inputtext{
+        margin-top: 30px;
+        width: 30vw;
+        height: 60px;
+    }
+    .inputtext label{
+        font-size: 1.2rem;
+    }
+    .inputtext input{
+        width: 30vw;
+        height: 25px;
+        height: 30px;
+        padding: 2px;
+        margin-top: 20px;
+        font-size: 1.1rem;
+    }
+    .inputtext input:focus{
+        outline: none;
+    }
+    .submit input{
+        width: 13vw;
+        height: 40px;
+        /* padding: 2px; */
+        font-size: 1.1rem;
+        margin-top: 40px;
+        border-radius: 10px;
+        background-color: rgb(147, 7, 138);
+        color: white;
+        cursor: pointer;
+    }
+    .submit input:hover{
+        background-color: rgb(126, 5, 118);
+    }
+    .submit input:active{
+        background-color: rgb(109, 4, 102);
+    }
+    .inputtext label{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div class="form">
+        <h1>Weather Web App</h1>
+        <form action="/" method="post">
+            <div class="inputtext">
+                <label for="cityName">Enter Your City Name</label>
+                <input type="text" name="cityName" autocomplete="off">
+            </div>
+            <div class="submit">
+                <input type="submit" value="Go" id="submit">
+            </div>
+        </form>
+    </div> 
+</body>
+</html>
